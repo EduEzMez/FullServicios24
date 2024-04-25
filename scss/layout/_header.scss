@@ -1,26 +1,72 @@
 header{
-    width: auto;
-    height: auto;
     @include flex-center-center;
+    height: 200px;
+    flex-direction: column;
     background-color: $color-primario;
-    .container{
-        width: 100%;
-        height: 300px;
+    .container__logo{
+        padding: 10px;
+        width: auto;
+        height: 100px;
         @include flex-center-center;
         flex-direction: column;
+        text-align: center;
+        a{
+            text-decoration: none;
+        }
         .logo{
+            height: 20px;
             font-size: 35px;
             font-weight: 700;
             color: $color-letra1;
             .servicios{
                 font-weight: 900;
-                color: $color-negro;
+                color: $color-letra2;
             }
         }
         .sublogo{
+            height: 20px;
             font-size: 20px;
             font-weight: 400;
             color: $color-letra1;
         }
+    }
+    .container__nav{
+        @include flex-center-center;
+        width: auto;
+        a{
+            text-decoration: none;
+        }
+        ul{
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+        li{
+            text-align: center;
+            margin: 5px;
+            width: 100px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: $color-letra2;
+            color: $color-primario;
+            list-style-type: none;
+            display: inline-block;
+            box-shadow: 2px 2px 2px black;
+            &:hover{
+                background-color: rgb(150, 90, 206);
+                box-shadow: 2px 2px 2px rgb(57, 57, 57);
+            }
+        }
+    }
+
+}
+@media (min-width: 1024px){
+    header{
+        height: 200px;
+        @include flex-center-center;
+        flex-direction: row;
+    }
+    .container__nav{
+        margin-inline-start: 50px;
     }
 }
