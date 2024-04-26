@@ -10,6 +10,7 @@ header{
         @include flex-center-center;
         flex-direction: column;
         text-align: center;
+        @include aparece;
         a{
             text-decoration: none;
         }
@@ -31,6 +32,7 @@ header{
         }
     }
     .container__nav{
+        @include aparece;
         @include flex-center-center;
         width: auto;
         a{
