@@ -4,6 +4,8 @@
     align-items: center;
 }
 
+
+
 @keyframes aparecer{
     0%{
         opacity: (0);
@@ -16,4 +18,19 @@
 @mixin aparece{
     animation-name: aparecer;
     animation-duration: 2s;
+}
+
+
+@keyframes derecha_izquerda{
+    from{
+        transform: translate(-100px);
+    }
+    to{
+        transform: translate(100px);
+    }
+}
+
+@mixin moverse{
+    animation-name: derecha_izquierda;
+    animation-duration: 3s;
 }

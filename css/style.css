@@ -6,6 +6,14 @@
     opacity: 1;
   }
 }
+@keyframes derecha_izquerda {
+  from {
+    transform: translate(-100px);
+  }
+  to {
+    transform: translate(100px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -156,9 +164,82 @@ main .container__hero .butllamar:hover {
   box-shadow: 2px 2px 2px rgb(57, 57, 57);
 }
 main .container__ofrecemos {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  padding: 20px;
   width: 100%;
-  height: 500px;
+  height: 700px;
   background-color: #D5DBDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .container__ofrecemos .contenedor__h2 {
+  max-width: 80%;
+}
+main .container__ofrecemos .contenedor__h2 h2 {
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+main .container__ofrecemos .contenedor__h2 h2 span {
+  color: blueviolet;
+}
+@media (max-width: 1024px) {
+  main .container__ofrecemos .contenedor__h2 h3 {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  main .container__ofrecemos .contenedor__h2 h2 {
+    display: none;
+  }
+  main .container__ofrecemos .contenedor__h2 h3 {
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+  }
+  main .container__ofrecemos .contenedor__h2 h3 span {
+    color: blueviolet;
+  }
+}
+main .container__ofrecemos .contenedor__texto__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+main .container__ofrecemos .contenedor__texto__img p {
+  text-align: center;
+  max-width: 70%;
+}
+main .container__ofrecemos .contenedor__texto__img img {
+  animation-name: derecha_izquierda;
+  animation-duration: 3s;
+  max-width: 40%;
+}
+@media (min-width: 945px) {
+  main .container__ofrecemos .contenedor__texto__img img {
+    max-width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  main .container__ofrecemos .contenedor__texto__img {
+    margin-top: 60px;
+    flex-direction: row;
+  }
+  main .container__ofrecemos .contenedor__texto__img img {
+    max-width: 300px;
+    margin-left: 50px;
+  }
+  main .container__ofrecemos .contenedor__texto__img p {
+    max-width: 400px;
+    margin-right: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
