@@ -21,16 +21,17 @@
 }
 
 
-@keyframes derecha_izquerda{
-    from{
-        transform: translate(-100px);
+
+//ver animacion
+@keyframes down_up{
+    0%{
+        transform: translateZ(-100%);
     }
-    to{
-        transform: translate(100px);
+    100%{
+        transform: translateZ(0);
     }
 }
 
-@mixin moverse{
-    animation-name: derecha_izquierda;
-    animation-duration: 3s;
-}
+//se llama la animacion con la propiedad:  
+// animation: name_de_la_animacion 1s ease-out;
+

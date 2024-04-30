@@ -6,12 +6,12 @@
     opacity: 1;
   }
 }
-@keyframes derecha_izquerda {
-  from {
-    transform: translate(-100px);
+@keyframes down_up {
+  0% {
+    transform: translateZ(-100%);
   }
-  to {
-    transform: translate(100px);
+  100% {
+    transform: translateZ(0);
   }
 }
 * {
@@ -215,11 +215,10 @@ main .container__ofrecemos .contenedor__texto__img {
 }
 main .container__ofrecemos .contenedor__texto__img p {
   text-align: center;
-  max-width: 70%;
+  max-width: 75%;
+  font-weight: 300;
 }
 main .container__ofrecemos .contenedor__texto__img img {
-  animation-name: derecha_izquierda;
-  animation-duration: 3s;
   max-width: 40%;
 }
 @media (min-width: 945px) {
