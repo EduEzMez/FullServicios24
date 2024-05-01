@@ -311,5 +311,33 @@ main .container__zonas .parrafo1 {
   margin-top: 20px;
   font-weight: 600;
 }
+main .container__servicios {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #D5DBDB;
+}
+main .container__servicios h3 {
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  margin-bottom: 10px;
+}
+main .container__servicios h3 span {
+  color: blueviolet;
+}
+main .container__servicios .contenedor__cartas {
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #95A5A6;
+}
 
 /*# sourceMappingURL=style.css.map */
